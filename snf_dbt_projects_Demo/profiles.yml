@@ -1,0 +1,12 @@
+snf_dbt_projects_Demo:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      role: SYSADMIN
+      warehouse: ACCOUNT_ADMIN_WH
+      database: DBT_DEMO
+      schema: DEV_SALES
+      account: ''
+      user: ''
+      threads : 8
